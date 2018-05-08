@@ -18,6 +18,13 @@ gem 'uglifier', '>= 1.3.0'
 
 # ADD DEVISE 
 gem 'devise'
+# ADD FIGARO
+gem 'figaro'
+# CONFIGURING CARRIERWAVE TO COMMUNICATE WITH AMAZON S3
+gem "fog-aws"
+# ADD CARRIERWAVE
+gem 'carrierwave', '~> 1.2.1'
+gem 'mini_magick', '~> 4.3'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

@@ -21,6 +21,11 @@
 </p>
 
 <p>
+  <strong>Image:</strong>
+  <%= link_to(image_tag(@item.image.thumb.url, alt: 'Image'), @item.image.url, target: '_blank') if @item.image? %>
+</p>
+
+<p>
   <strong>Size:</strong>
   <%= @item.size %>
 </p>
