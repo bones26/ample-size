@@ -25,6 +25,8 @@ gem "fog-aws"
 # ADD CARRIERWAVE
 gem 'carrierwave', '~> 1.2.1'
 gem 'mini_magick', '~> 4.3'
+# ADD aws-sdk to make images show on Heroku app
+gem 'aws-sdk', '~> 2'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
