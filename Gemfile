@@ -22,12 +22,17 @@ gem 'devise'
 gem 'figaro'
 # CONFIGURING CARRIERWAVE TO COMMUNICATE WITH AMAZON S3
 gem "fog-aws"
-# ADD CARRIERWAVE
+# ADD CARRIERWAVE (AND MINIMAGICK)
 gem 'carrierwave', '~> 1.2.1'
 gem 'mini_magick', '~> 4.3'
+<<<<<<< HEAD
 # ADD aws-sdk to make images show on Heroku app
 gem 'aws-sdk', '~> 2'
 
+=======
+# ADD STRIPE CHECKOUT
+gem 'stripe'
+>>>>>>> Stripe
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
