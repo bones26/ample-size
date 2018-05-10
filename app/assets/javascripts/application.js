@@ -10,10 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+// ** ADD BOOTSTRAP DEPENDENCIES & BOOTSTRAP **
 //= require rails-ujs
 //= require_tree .
-
-// ** ADD BOOTSTRAP DEPENDENCIES & BOOTSTRAP **
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
