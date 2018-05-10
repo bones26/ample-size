@@ -29,6 +29,12 @@ gem 'mini_magick', '~> 4.3'
 gem 'aws-sdk', '~> 2'
 # ADD STRIPE
 gem 'stripe'
+# ADD SENDGRID
+gem 'sendgrid'
+# ADD BOOTSTRAP
+gem 'bootstrap', '~> 4.1.0'
+# ADD JQUERY-RAILS (FOR BOOTSTRAP)
+gem 'jquery-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'

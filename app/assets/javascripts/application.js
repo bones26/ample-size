@@ -12,3 +12,11 @@
 //
 //= require rails-ujs
 //= require_tree .
+
+// ** ADD BOOTSTRAP DEPENDENCIES & BOOTSTRAP **
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+
+
+
