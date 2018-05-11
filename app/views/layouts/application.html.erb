@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AmpleSize</title>
+    <title>Ample Size</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag "styles.css" %>
+    <%= stylesheet_link_tag "sticky-footer.css" %>
   </head>
 
-  <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  </head>
+
+  <body>  
   
-  <ul class="hmenu">
-  <%= render 'devise/menu/registration_items' %>
-  <%= render 'devise/menu/login_items' %>
-  </ul>
+  <<%= render 'items/navbar' %>>
+
+
 
     <%= yield %>
+
+
   </body>
 </html>
+

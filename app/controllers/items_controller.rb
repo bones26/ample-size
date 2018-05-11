@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+  
   # GET /items
   # GET /items.json
   def index
@@ -18,6 +18,7 @@ class ItemsController < ApplicationController
   end
 
   # GET /items/new
+  before_action :authenticate_user!
   def new
     @item = Item.new
   end
