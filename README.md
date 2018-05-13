@@ -26,9 +26,6 @@ There exists a HUGE DISCONNECT between the sizes being made for women and the si
 
 As any plus-size female can attest to, finding clothes that achieve the trifecta of on trend, well-fitted *and* affordable is notoriously difficult. This is the case both irl and online.
 
-[image:E6560AA5-743B-4308-A37D-FA14B16AB259-6142-000041921FDEF968/Screen Shot 2018-04-29 at 4.19.17 pm.png]
-[image:C95F7880-4782-44B3-BC4B-2D21BCEF8C8E-6142-00004190B493EB08/Screen Shot 2018-04-29 at 4.19.31 pm.png]
-
 #### A Bit of Insight
 
 **[A plus size woman walks in to a shop…]**
@@ -100,7 +97,6 @@ Create a targeted online marketplace with features specifically dedicated to the
 
 # User Stories
 [Trello] (https://trello.com/b/fjUDzhVW/2-sided-marketplace-due-friday-11-may-2018-at-1000-amom)
-
 
 # Detailed User Stories
 
@@ -393,12 +389,14 @@ User without a profile attempts to visit any page
 * When I go to any page other than the create profile page
 * Then I am redirected to the create profile page
 
-
 # WireFrames 
-[Figma](https://www.figma.com/file/GaST6U62VC0tGQvHmUBn9n3l/Marketplace)
+[Figma]
+(https://www.figma.com/file/GaST6U62VC0tGQvHmUBn9n3l/Marketplace)
 
 # Database Tables
-(/ample-size/readme_resources/database_mvc.png)
+[MVC]
+(ample-size/readme_resources/database_mvc.png)
 
 # ERD
+[Entity Relationship Diagrams - dbdesigner]
 (ample-size/readme_resources/ERD.png)
