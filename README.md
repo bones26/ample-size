@@ -101,3 +101,304 @@ Create a targeted online marketplace with features specifically dedicated to the
 # User Stories
 [Trello] (https://trello.com/b/fjUDzhVW/2-sided-marketplace-due-friday-11-may-2018-at-1000-amom)
 
+
+# Detailed User Stories
+
+## User should receive purchase notification
+### Feature: 
+Receive Real-time Notification
+
+* AS A SELLER-USER
+* I want to receive notifications when someone has purchased an item
+* so I can organise postage immediately
+
+### Scenario:
+User receives purchase notification
+
+* AS A USER REGARDLESS OF MY LOGIN STATUS
+* When someone purchases an item
+* I get an automatic purchase notification (via email)
+* and a link to ‘View Details’
+* that shows me the item purchased and the type of postage required
+****
+
+## User should have account overview 
+### Feature:
+View All Sales and Purchases 
+
+* AS A USER
+* I want to see an overview of all purchases and sales
+* So I can refer to them for details
+
+### Scenario:
+User views order activity
+
+GIVEN THAT I AM A LOGGED IN USER
+* When I got to the Home page
+* And click on My Account
+* I should be taken to the My Account page
+* And should see a table of all my purchases and sales
+* And they should be ordered by most recent
+* And I should be able to expand or minimise this view
+****
+## User should be able to rent items 
+### Feature:
+Rent Item 
+
+* AS A BUYER-USER
+* I want the option to rent an item
+* So I don’t have to spend lots of money on something I will only wear once
+* 
+### Scenario:
+Buyer rents item for x days/dates
+
+* GIVEN THAT I AM A LOGGED IN USER
+* When I view a listing
+* And click Rent Item
+* A form pops up
+* With the fields 
+[Required By DD/MM/YYYY]
+[Returned By DD/MM/YY]  
+[Your Message]
+[SUBMIT RENTAL REQUEST]
+* User clicks submit and sees “Your request has been sent to the seller, who will respond soon
+* Seller received rental request
+****
+## Buyer can list items by price AND postage
+### Feature: 
+Filter Item by price AND postage cost
+
+* AS A BUYER-USER
+* I want to be able to view items in terms of price AND postage 
+* so I know how much I will actually be paying
+
+### Scenario:
+User sorts results by price AND postage
+
+* AS A LOGGED IN USER
+* When I click View Items 
+* I can order the items by price
+* And then by postage cost
+* In ascending or descending order
+* So I know the final cost of item 
+****
+## Buyer can search by more than one size 
+### Feature:
+Select multiple sizes in search
+
+* AS A USER-BUYER
+* When I search for items by size
+* I want to search for size 16 AND 18
+* so that I can see all size options at once
+
+### Scenario:
+User searches by 2 sizes
+
+* GIVEN I’M A LOGGED-IN USER
+* When I search for dresses 
+* And select size
+* I want to select both size 16 and size 18 
+* And view all dresses that are available in size 16 and 18
+****
+## User should be able to edit their own profile
+### Feature: 
+Edit Profile
+
+* AS A USER
+* I want to edit my profile
+* So I can keep my details up to date
+
+### Scenario: 
+User edits profile
+
+* GIVEN I’M A LOGGED IN USER
+* When I go to my profile page
+* And click ‘Edit’
+* And update the text in the text fields/or upload a new profile picture
+* And click ‘Update Profile’
+* I want to see my Profile Page
+* With the updated details
+****
+## User should NOT be able to edit a profile that’s not their own.
+### Feature: 
+Unable to edit another user’s profile
+
+* AS A USER
+* I want nobody other than me to be able to edit my profile
+* Because I want to have control over my profile details
+
+### Scenario: 
+User attempts to edit another user's profile
+
+* GIVEN I’M A LOGGED IN USER
+* When I go to the edit profile page for another user's profile
+* Then I am redirected back to the user's profile view page
+****
+## User should be able to edit a listing that is theirs
+
+### Feature: 
+Edit Item Listing
+
+* As A USER
+* I want to edit one of my item listings
+* Because I want to improve the accuracy of my item listings
+
+### Scenario: 
+User edits item listing
+
+* GIVEN I’M A LOGGED IN USER
+* When I go to the edit page for a listing that is mine
+* And I change the text in the text fields and/or upload a new item image
+* And I click "Update item”
+* Then I should see the detailed view page for that item
+* And the details should be updated
+****
+## User should not be able to edit an item listing that is not theirs
+### Feature: 
+Unable to edit other user's book listing
+
+* AS A USER
+* I want nobody other than me to be able to edit my item listings
+* Because I want to have control over my item listings
+
+### Scenario: 
+User attempts to edit another user's book listing
+
+* GIVEN I’M A LOGGED IN USER
+* When I go to item page for another user's item listing
+* I don’t see any options to edit their item
+* I only see options to purchase the item
+****
+### User should be able to delete an item listing that is theirs
+
+### Feature: 
+Delete Item Listing
+
+* AS A USER
+* I want to delete one of my item listings
+* Because I have decided not to sell it
+
+### Scenario: 
+User deletes book listing
+
+* GIVEN I’M A LOGGED-IN USER
+* When I go to the edit page for an item listing that is mine
+* And I click 'delete item’
+* Then the book listing should be deleted from the database
+****
+## User should not be able to open a message conversation with themselves
+### Feature: 
+Unable to message self
+
+* AS A USER
+* I do not want to see an option to message myself
+* Because this would be pointless functionality
+
+### Scenario: 
+User visits messages page
+
+* GIVEN I’M A LOGGED-IN USER
+* When I go to the messages page
+* Then my username is not listed as an option to message
+
+## User should not see a 'message user’ button on their own profile
+### Feature: 
+No 'message user’ button on own profile
+
+* AS A USER
+* I do not want to see an option to message myself
+* Because this would be pointless functionality
+
+### Scenario: 
+User visits their profile page
+
+* GIVEN I’M A LOGGED-IN USER
+* When I go to my profile page
+* Then I do not see a 'message user’ button
+****
+## User should be able to view item listings on homepage without logging in
+### Feature: 
+Homepage viewable without login
+
+* AS A USER
+* I want to view item listings without signing in
+* Because I want to know it's worth signing up before I do so
+
+### Scenario: 
+User visits homepage
+
+* GIVEN I’M A LOGGED OUT USER
+* When I go to the homepage
+* Then I can view the item listings
+****
+## User should be able to view detailed item listing without logging in
+### Feature: 
+Detailed item view viewable without login
+
+* AS A USER
+* I want to view item listings without signing in
+* Because I want to know it's worth signing up before I do so
+
+### Scenario: 
+User visits detailed item view page
+
+* GIVEN I’M A LOGGED OUT USER
+* When I go to the detailed item view page
+* Then I can view the detailed item view page
+****
+### User should not be able to view Messages page without logging in
+
+### Feature: 
+User must be logged in to view messages page
+
+* AS A USER
+* I want to know that only users who are logged in can message me
+* Because I don't want to get spammed
+
+### Scenario: 
+User visits messages page
+
+* GIVEN I’M A LOGGED OUT USER
+* When I go to the messages page
+* Then I am redirected to the ’Sign Up’ option on the login page
+****
+## User should not be able to view New Item form page without logging in
+### Feature: 
+User must be logged in to see the add new item form
+
+* AS SITE ADMIN
+* I want users to be required to log in before they can add an item listing
+* Because I want to be able to apply the correct functionality and permissions
+
+### Scenario: 
+User visits add new book page
+
+* GIVEN I’M A LOGGED-OUT USER
+* When I go to the add new item page
+* Then I am redirected to the login page
+****
+## When logged in, user should not be able to view any page other than 'create profile' until they have created a profile
+### Feature: 
+User must create a profile upon signup in order to interact on the site
+
+* AS SITE ADMIN
+* I want all users to be required to have a profile
+* Because it builds a sense of community
+
+### Scenario: 
+User without a profile attempts to visit any page
+
+* GIVEN I’M A LOGGED-IN USER
+* And I don't have a profile
+* When I go to any page other than the create profile page
+* Then I am redirected to the create profile page
+
+
+# WireFrames 
+[Figma](https://www.figma.com/file/GaST6U62VC0tGQvHmUBn9n3l/Marketplace)
+
+# Database Tables
+(/ample-size/readme_resources/database_mvc.png)
+
+# ERD
+(ample-size/readme_resources/ERD.png)
