@@ -94,9 +94,10 @@ In other sites where this is the case, the user doesn’t have the same filterin
 ## Solution
 Create a targeted online marketplace with features specifically dedicated to the buying and selling experience of plus-sized clothing within Australia.
 
-
 # User Stories
-[Trello] (https://trello.com/b/fjUDzhVW/2-sided-marketplace-due-friday-11-may-2018-at-1000-amom)
+![Trello] (https://trello.com/b/fjUDzhVW/2-sided-marketplace-due-friday-11-may-2018-at-1000-amom)
+![Trello Screenshots]
+(https://github.com/bones26/ample-size/blob/master/readme_resources/trello)
 
 # Detailed User Stories
 
@@ -390,13 +391,15 @@ User without a profile attempts to visit any page
 * Then I am redirected to the create profile page
 
 # WireFrames 
-[Figma]
+![Figma]
 (https://www.figma.com/file/GaST6U62VC0tGQvHmUBn9n3l/Marketplace)
+![Screenshots]
+(https://github.com/bones26/ample-size/tree/master/readme_resources/mockups-wireframes)
 
 # Database Tables
-[MVC]
-(ample-size/readme_resources/database_mvc.png)
+![MVC]
+(https://github.com/bones26/ample-size/blob/master/readme_resources/database_mvc.png)
 
 # ERD
-[Entity Relationship Diagrams - dbdesigner]
-(ample-size/readme_resources/ERD.png)
+![Entity Relationship Diagrams - dbdesigner]
+(https://github.com/bones26/ample-size/blob/master/readme_resources/ERD.png)
